@@ -2,7 +2,7 @@ let tblCountries = document.getElementById("tblCountries");
 
 let tableBody = `<tr>
                     <th> Name </th>
-                    <th> Falg Symble </th>
+                    
                     <th> Falg Image </th>
             
                 </tr>` ;
@@ -39,7 +39,6 @@ fetch("https://restcountries.com/v3.1/all")
                         <br>
                         <a href = "${element.maps.googleMaps}" class="btn btn-primary">Live Location</a>
                         </td>
-                        <td>${element.flag}</td>
                         <td><img src="${element.flags.png}" alt=""></td>
                     </tr>`
             console.log(element.name.common);
